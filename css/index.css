@@ -28,6 +28,7 @@ h1 , h2 , h3 , h4 , h5 , h6 , strong{
 }
 img{
     width:100%;
+    max-width: 100%; 
     display: block;
     object-fit: cover;
 }
@@ -55,8 +56,9 @@ body{
 
    text-transform: uppercase;
    font-weight: 700;
-   letter-spacing: 2px;
+   letter-spacing: .3em;
 
+   z-index: 3;
    position: fixed;
    top:0;
    left:0;
@@ -64,28 +66,35 @@ body{
 .header .centered{
     width:90%;
     margin: auto;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     align-content: initial;
 }
-.header .header__h1{
+.header__h1{
     max-width:200px;
     font-size: 2em;
     color: var(--black);
 }
 /* .header .header__h1 .header__a{} */
-.header .fa-bars{
+.header__icon .fa-bars{
     display: none;
+    padding: 0 1em;
+    width: 1.87em;
 }
-.header .header__nav{
+.header__icon .fa-bars:hover{
+    color: #e6ae48;
+}
+.header .logo{ /**/
+    max-width: 12.5em;
+}
+.header__nav{
     width: calc( 100% - 200px );
 
     font-size: 0.8em;
 }
-.header .header__nav .header__ul{
+.header__nav .header__ul{
     width:100%;
 
     display: flex;
@@ -94,13 +103,13 @@ body{
     align-items: center;
     align-content: initial;
 }
-.header .header__li{
+.header__li{
     margin: 0 0 0 4em;
 }
-.header .header__a{
+.header__a{
     transition: all .5s ease;
 }
-.header .header__a.here{
+.header__a.here{
     color: var(--yellow);
 }
 .header .header__a:hover{
