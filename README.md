@@ -1,6 +1,6 @@
 # Stockholm Landing Theme
  
-Replicate (https://demo.select-themes.com/stockholm14/) lading page. It's a wordpress theme
+Replicate (https://demo.select-themes.com/stockholm14/) lading page. It's a Wordpress theme.
 
 ## To do 🗒
 - Landing in responsive mode.
@@ -12,12 +12,19 @@ Replicate (https://demo.select-themes.com/stockholm14/) lading page. It's a word
 ## Technologies 🛠
 - HTML
 - CSS
-- JavaScript ⚠️
+- Sass
+- JavaScript
+- TypeScript
 
-⚠️ *pending implementation*
+## Created with ⚙️
+- Visual Studio Code
+- Prepros
+
+## Next steps 🔜
+- add animations with @keyframes (CSS)
 
 ## Programming Time ⏰
-About 3h
+About 7h
 
 ## Curse 💻
 Desarrollo Web Front-End [Women4IT](https://women4it.eu/) y [BeJob](https://www.bejob.com/)
@@ -28,5 +35,5 @@ Desarrollo Web Front-End [Women4IT](https://women4it.eu/) y [BeJob](https://www.
 ## Author 
 - Raquel Cuesta [portfolio](https://rcbdesigner.com/)
 
-## License
-MIT
+## License ⚖️
+MIT license
