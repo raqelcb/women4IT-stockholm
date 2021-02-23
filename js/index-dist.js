@@ -1,1 +1,0 @@
-"use strict";const header__nav=document.querySelector(".header__nav"),icon=document.querySelector(".fas.fa-bars"),header__ul=document.querySelector(".header__ul");icon.addEventListener("click",(function(){console.log("I got clicked"),header__nav.classList.toggle("visible"),header__ul.classList.toggle("visible")}));
