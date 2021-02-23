@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #393939;
+        font-family: Raleway;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <rect id="Rectángulo_1" data-name="Rectángulo 1" class="cls-1" x="-2" y="-2" width="20" height="21"/>
+  <text id="S" class="cls-2" transform="translate(3.284 13.346) scale(1.278)">S</text>
+</svg>
