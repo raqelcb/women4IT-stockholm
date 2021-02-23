@@ -75,6 +75,8 @@ body{
 .header__h1{
     max-width:200px;
     font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.15em;
     color: var(--black);
 }
 /* .header .header__h1 .header__a{} */
@@ -91,12 +93,13 @@ body{
 }
 .header__nav{
     width: calc( 100% - 200px );
-
     font-size: 0.8em;
 }
-.header__nav .header__ul{
+.header__a{
+    color: var(--yellow);
+}
+.header__ul{
     width:100%;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -105,6 +108,9 @@ body{
 }
 .header__li{
     margin: 0 0 0 4em;
+    font-size: 0.8em;
+    font-weight: 800;
+    letter-spacing: 0.18em;
 }
 .header__a{
     transition: all .5s ease;

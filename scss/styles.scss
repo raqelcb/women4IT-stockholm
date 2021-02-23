@@ -1,0 +1,12 @@
+@import '_header', '_product', '_footer', '_var';
+
+*{
+    @include resets;
+}
+
+body{
+    font-family: $mainFont;
+    @include respond(medium){
+        font-size: 90%;
+    }
+}
