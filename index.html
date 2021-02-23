@@ -6,36 +6,42 @@
     <title>Stockholm - Chairs</title>
 
     <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" defer></script>
+    <script src="js/app.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700;800;900&display=swap">
   </head>
   <body>
-<!--loading="lazy"-->
     <header class="header">
-      <div class="centered">
+
+      <div class="header__center">
+
         <h1 class="header__h1">
-          <a class="header__a" href="#" title="Stockholm">STKLM</a>
+          <a class="header__a" href="#" title="Stockholm">
+            <span class="header__span">STKLM</span></a>
+            <picture>
+              <source class="header__logo" srcset="assets/img/logo_dark.png" media="(prefers-color-scheme:dark)">
+              <img class="header__logo" src="assets/img/logo.png" alt="Stockholm">
+          </picture>
         </h1>
-        <i class="header__icon fas fa-bars"></i>
+
         <!--add submenu-->
         <nav class="header__nav">
           <ul class="header__ul">
-              <li class="header__li"><a class="header__a" href="#" title="home">Home</a></li>
+              <li class="header__li"><a class="header__a__home" href="#" title="home">Home</a></li>
               <li class="header__li"><a class="header__a" href="#" title="pages">Pages</a>
                 <div class="header__pages">
                   <div class="header__line"></div>
                   <ul class="menu__pages">
-                    <li class="menu__item"><a href="#" title="about us">About Us</a></li>
-                    <li class="menu__item"><a href="#" title="our services">Our Services</a></li>
-                    <li class="menu__item"><a href="#" title="our services (full)">Our Services (Full)</a></li>
-                    <li class="menu__item"><a href="#" title="our process">Our Process</a></li>
-                    <li class="menu__item"><a href="#" title="contact us">Contact Us</a></li>
-                    <li class="menu__item"><a href="#" title="left sidebar">Left Sidebar</a></li>
-                    <li class="menu__item"><a href="#" title="right sidebar">Right Sidebar</a></li>
-                    <li class="menu__item"><a href="#" title="full width page">Full Width Page</a></li>
+                    <li class="menu__item first"><a class="menu__a" href="#" title="about us">About Us</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="our services">Our Services</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="our services (full)">Our Services (Full)</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="our process">Our Process</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="contact us">Contact Us</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="left sidebar">Left Sidebar</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="right sidebar">Right Sidebar</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="full width page">Full Width Page</a></li>
                   </ul>
                 </div>
               </li>
@@ -43,10 +49,10 @@
                 <div class="header__pages reverse">
                   <div class="header__line"></div>
                   <ul class="menu__pages">
-                    <li class="menu__item"><a href="#" title="default">Default (Text and Spaces)</a></li>
-                    <li class="menu__item"><a href="#" title="gallery">Gallery Style With Spaces</a></li>
-                    <li class="menu__item"><a href="#" title="gallery whitout">Gallery Style Whitout Spaces</a></li>
-                    <li class="menu__item"><a href="#" title="blog mansonry full witdh">Single Project</a></li>
+                    <li class="menu__item first"><a class="menu__a" href="#" title="default">Default (Text and Spaces)</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="gallery">Gallery Style With Spaces</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="gallery whitout">Gallery Style Whitout Spaces</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="blog mansonry full witdh">Single Project</a></li>
                   </ul>
                 </div>
               </li>  
@@ -54,25 +60,32 @@
                 <div class="header__pages reverse">
                   <div class="header__line"></div>
                   <ul class="menu__pages">
-                    <li class="menu__item"><a href="#" title="blog large image">Blog Large Image</a></li>
-                    <li class="menu__item"><a href="#" title="blog large image slide bar">Blog Large Image With Sidebar</a></li>
-                    <li class="menu__item"><a href="#" title="blog mansonry">Blog Mansonry</a></li>
-                    <li class="menu__item"><a href="#" title="blog mansonry full width">Blog Mansonry Full Width</a></li>
-                    <li class="menu__item"><a href="#" title="single post">Single Post</a></li>
+                    <li class="menu__item first"><a class="menu__a" href="#" title="blog large image">Blog Large Image</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="blog large image slide bar">Blog Large Image With Sidebar</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="blog mansonry">Blog Mansonry</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="blog mansonry full width">Blog Mansonry Full Width</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="single post">Single Post</a></li>
                   </ul>
                 </div>
               </li>  
-              <li class="header__li"><a class="header__a" href="#" title="Shop">Shop</a>
+              <li class="header__li last"><a class="header__a" href="#" title="Shop">Shop</a>
                 <div class="header__pages reverse">
                   <div class="header__line"></div>
                   <ul class="menu__pages">
-                    <li class="menu__item"><a href="#" title="shop sidebar">Shop Sidebar</a></li>
-                    <li class="menu__item"><a href="#" title="shop sidebar full width">Shop Sidebar Full Width</a></li>
+                    <li class="menu__item first"><a class="menu__a" href="#" title="shop sidebar">Shop Sidebar</a></li>
+                    <li class="menu__item"><a class="menu__a" href="#" title="shop sidebar full width">Shop Sidebar Full Width</a></li>
                   </ul>
                 </div>
               </li>
           </ul>
         </nav>
+
+        <div class="header__mobile">
+          <a href="#" title="menu">
+              <i class="header__icon fas fa-bars"></i>
+          </a>
+      </div>
+
       </div>
     </header>
   </head>
@@ -82,9 +95,9 @@
     <main class="main">
 
       <div class="main__product">
-        <div class="centered">
+        <div class="main__center">
           <div class="main__column">
-            <img class="img" src="assets/img/lamp1.png" loading="lazy" alt="Image">
+            <img class="main__img" src="assets/img/lamp1.png" loading="lazy" alt="Image">
           </div>
           <div class="main__column">
             <h2 class="main__h2">B&Y Lamp</h2>
@@ -98,27 +111,27 @@
         </div>
       </div>
 
-      <div class="main__product specific">
-        <div class="centered">
-          <div class="main__column">
-            <img class="img" src="assets/img/chair1.png" loading="lazy" alt="Image">
+      <div class="main__product2">
+        <div class="main__center2">
+          <div class="main__column2">
+            <img class="main__img" src="assets/img/chair1.png" loading="lazy" alt="Image">
           </div>
-          <div class="main__column">
-            <h2 class="main__h2">Leathery Goodness</h2>
-            <div class="main__line"></div>
-            <p class="main__p">Looking for a way to showcase your products,
+          <div class="main__column2">
+            <h2 class="main__h22">Leathery Goodness</h2>
+            <div class="main__line2"></div>
+            <p class="main__p2">Looking for a way to showcase your products,
               portfolio, services or simply yourself and your work? Look no
               more, becouse with this stylish & modern demo you can
               showcase simply anyhting in a modern and clean manner.</p>
-            <a class="main__a" href="#" title="Check it out">Check it out</a>
+            <a class="main__a2" href="#" title="Check it out">Check it out</a>
           </div>
         </div>
       </div>
 
       <div class="main__product">
-        <div class="centered">
+        <div class="main__center">
           <div class="main__column">
-            <img class="img" src="assets/img/chair2.png" loading="lazy"alt="Image">
+            <img class="main__img" src="assets/img/chair2.png" loading="lazy"alt="Image">
           </div>
           <div class="main__column">
             <h2 class="main__h2">The yellow director</h2>
@@ -132,28 +145,30 @@
         </div>
       </div>
 
-      <div class="main__product specific">
-        <div class="centered">
-          <div class="main__column">
-            <img class="img" src="assets/img/chair3.png" loading="lazy" alt="Image">
+      <div class="main__product2">
+        <div class="main__center2">
+          <div class="main__column2">
+            <img class="main__img" src="assets/img/chair3.png" loading="lazy" alt="Image">
           </div>
-          <div class="main__column">
-            <h2 class="main__h2">The woodpecker</h2>
-            <div class="main__line"></div>
-            <p class="main__p">Looking for a way to showcase your products,
+          <div class="main__column2">
+            <h2 class="main__h22">The woodpecker</h2>
+            <div class="main__line2"></div>
+            <p class="main__p2">Looking for a way to showcase your products,
               portfolio, services or simply yourself and your work? Look no
               more, becouse with this stylish & modern demo you can
               showcase simply anyhting in a modern and clean manner.</p>
-            <a class="main__a" href="#" title="Check it out">Check it out</a>
+            <a class="main__a2" href="#" title="Check it out">Check it out</a>
           </div>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="centered">
-        <h3 class="footer__h3">Stklm</h3>
-        <a class="footer__copy" href="#" title="Copyright Select Themes" target="_blank">© Copyright Select Themes</a>
+      <div class="footer__center">
+        <img class="footer__logo" src="assets/img/logo_light.png" alt="STKLM">
+        <a class="footer__copy" href="#" title="Copyright Select Themes" target="_blank">
+          <p class="footer__p"> © Copyright Select Themes</p>
+        </a>
         <div class="footer__line"></div>
         <ul class="footer__ul">
           <li class="footer__li"><a class="footer__a" href="#" title="Facebook"  target="_blank" rel="noopener noreferrer"> <i class="fab fa-facebook-f"></i> </a></li>
